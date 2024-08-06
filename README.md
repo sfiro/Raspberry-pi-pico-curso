@@ -7,3 +7,18 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![imagen esquemático](imagenes/pines.jpg)
 
+
+# Códigos
+
+1- [Parpadeo de Led](/Users/debbiearredondo/Desktop/curso raspberry/Raspberry-pi-pico-curso/Codigos/blink.py) 
+
+
+
+
+
+
+
+* [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
+* [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
+* [Mi linkedin] (https://www.linkedin.com/in/debbiearredondo/)
+* [Mi Instagram] (https://www.instagram.com/tutosingenieria)
