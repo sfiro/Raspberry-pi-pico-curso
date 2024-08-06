@@ -10,7 +10,7 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 # Códigos
 
-1- [Parpadeo de Led](/Users/debbiearredondo/Desktop/curso raspberry/Raspberry-pi-pico-curso/Codigos/blink.py) 
+1- [Parpadeo de Led](Codigos/blink.py) 
 
 
 
