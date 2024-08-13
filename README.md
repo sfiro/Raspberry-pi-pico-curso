@@ -12,11 +12,15 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 1- [Parpadeo de Led](Codigos/blink.py) 
 
+![circuito blink](imagenes/salida_digital.png)
+
 2- [lectura de pin digital](Codigos/2-lecturaDigital)
 
+![circuito lectura digital](imagenes/entrada_digital.png)
 
+3- [Salida de pin PWM](Codigos/3-salidaAnalogica.py)
 
-
+![circuito blink](imagenes/salida_digital.png)
 
 
 
