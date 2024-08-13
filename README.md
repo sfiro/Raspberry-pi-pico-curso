@@ -22,6 +22,9 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![circuito blink](imagenes/salida_digital.png)
 
+4- [Lectura analógica](Codigos/4-lecturaAnalogica.py)
+
+![circuito lectura analógica](imagenes/lectura_analogica.png)
 
 
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
