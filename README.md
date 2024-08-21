@@ -32,6 +32,10 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![circuito lectura analógica y leds](imagenes/lecturaYsalidaLucesRGB.png)
 
+7- [Manejo de ciclo For](Codigos/7-cicloFor.py)
+
+![manejo de For](imagenes/7manejoFor.png)
+
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
 * [Mi linkedin] (https://www.linkedin.com/in/debbiearredondo/)
