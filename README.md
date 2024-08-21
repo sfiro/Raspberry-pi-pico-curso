@@ -36,6 +36,10 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![manejo de For](imagenes/7manejoFor.png)
 
+8- [Manejo de listas](Codigos/8-manejoDeListas.py)
+
+![manejo de listas](imagenes/8-manejoListas.png)
+
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
 * [Mi linkedin] (https://www.linkedin.com/in/debbiearredondo/)
