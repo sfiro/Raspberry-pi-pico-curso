@@ -1,7 +1,7 @@
 from machine import Pin, PWM, ADC 
 import time
 
-lista =  [ 10 ]   # se crea un listado de valores PWM dentro de una lista
+valores =  [ 10]   # se crea un listado de valores PWM dentro de una lista
 
 rojo = PWM(Pin(0))    #se define el pin 0 como una salida PWM 
 
@@ -10,15 +10,28 @@ pulsador = Pin(16,Pin.IN,Pin.PULL_UP)   #se define el pulsador como entrada con 
 pot = ADC(Pin(26))  #se define el pin 26 como lectura analoga
 
 while True:
-    for dato in lista:   # se crea un for para recorrer la lista 
+    
+    for dato in valores:   # se crea un for para recorrer la lista 
         rojo.duty_u16(dato)      #enviamos el valor PWM
         print(dato)              # se imprime el dato enviado al PWM
         time.sleep(1)            #esperamos 1 segundo 
     
     if pulsador.value() == 0:    #si es pulsado 
         lectura = pot.read_u16()      #guarda la lectura
-        lista.append(lectura)      #la agrega a la lista a recorrer 
-        print(lista)        #imprimo la lista
+        valores.append(lectura)      #la agrega a la lista a recorrer 
+        print(valores)        #imprimo la lista
+
+
+
+
+
+
+
+
+
+
+
+
 
 # metodos de List
 # append --- agrega el dato al final

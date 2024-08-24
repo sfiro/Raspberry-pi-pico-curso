@@ -40,6 +40,18 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![manejo de listas](imagenes/8-manejoListas.png)
 
+9- [Manejo de ciclo While](Codigos/9-cicloWhile.py)
+
+![Manejo de ciclo While](imagenes/9-cicloWhile.png)
+
+10- [Manejo de funciones](Codigos/10-funciones.py)
+
+![Manejo de funciones](imagenes/10-funciones.png)
+
+11- [Manejo led RBG](Codigos/11-LedRGB.py)
+
+![Manejo led RBG](imagenes/11-LedRgb.png)
+
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
 * [Mi linkedin] (https://www.linkedin.com/in/debbiearredondo/)
