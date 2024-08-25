@@ -1,53 +1,71 @@
-from machine import Pin, PWM, ADC 
+# Importa las bibliotecas necesarias para controlar temporizadores, pines y PWM
+from machine import Pin, PWM
+from math import sin, cos, radians, pi
 import time
 
-valores =  [ 10]   # se crea un listado de valores PWM dentro de una lista
 
-rojo = PWM(Pin(0))    #se define el pin 0 como una salida PWM 
+# Configura los pines 0, 1 y 2 como salidas PWM para controlar los LEDs RGB
+green = PWM(Pin(0))
+blue = PWM(Pin(1))
+red = PWM(Pin(2))
 
-pulsador = Pin(16,Pin.IN,Pin.PULL_UP)   #se define el pulsador como entrada con resistencia de pull up
+rad = 0
 
-pot = ADC(Pin(26))  #se define el pin 26 como lectura analoga
+tiempo = 0.1
 
+# Función para aumentar el brillo del LED rojo
+def rojo():
+    for pwm in range(0, 65000, 1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        red.duty_u16(pwm)                 # Establece el ciclo de trabajo del PWM del LED rojo
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+    
+    for pwm in range(65000, 0, -1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        red.duty_u16(pwm)                 # Establece el ciclo de trabajo del PWM del LED rojo
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+
+# Función para aumentar el brillo del LED verde
+def verde():
+    for pwm in range(0, 65000, 1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        green.duty_u16(pwm)               # Establece el ciclo de trabajo del PWM del LED verde
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+    
+    for pwm in range(65000, 0, -1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        green.duty_u16(pwm)               # Establece el ciclo de trabajo del PWM del LED verde
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+
+# Función para aumentar el brillo del LED azul
+def azul():
+    for pwm in range(0, 65000, 1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        blue.duty_u16(pwm)                # Establece el ciclo de trabajo del PWM del LED azul
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+
+    for pwm in range(65000, 0, -1000):  # Recorre valores de 1000 a 65000 con incrementos de 1000
+        blue.duty_u16(pwm)               # Establece el ciclo de trabajo del PWM del LED verde
+        time.sleep(tiempo)                  # Pausa de 10 milisegundos para un aumento gradual del brillo
+
+# Bucle principal que se ejecuta indefinidamente
 while True:
+    # red.duty_u16(0)                 # Establece el ciclo de trabajo del PWM del LED rojo
+    # green.duty_u16(0)                 # Establece el ciclo de trabajo del PWM del LED rojo
+    # blue.duty_u16(0)                 # Establece el ciclo de trabajo del PWM del LED rojo
+    # rojo()            # Llama a la función para aumentar el brillo del LED rojo
+    # time.sleep(1)     # Pausa de 1 segundo después de completar la secuencia roja
+    # verde()           # Llama a la función para aumentar el brillo del LED verde
+    # time.sleep(1)     # Pausa de 1 segundo después de completar la secuencia verde
+    # azul()            # Llama a la función para aumentar el brillo del LED azul
+    # time.sleep(1)     # Pausa de 1 segundo después de completar la secuencia azul
     
-    for dato in valores:   # se crea un for para recorrer la lista 
-        rojo.duty_u16(dato)      #enviamos el valor PWM
-        print(dato)              # se imprime el dato enviado al PWM
-        time.sleep(1)            #esperamos 1 segundo 
+    # seno =  int(((sin(rad)/2)+1)*65535)
+    # coseno = int(((cos(rad)/2)+1)*65535)
+    seno = int((((sin(rad))/2)+0.5)*65535)
+    seno2 = int((((sin(rad+ pi))/2)+0.5)*65535)
+    coseno = int((((cos(rad))/2)+0.5)*65535)
+
+    red.duty_u16(seno)                 # Establece el ciclo de trabajo del PWM del LED rojo
+    green.duty_u16(coseno)               # Establece el ciclo de trabajo del PWM del LED verde    
+    blue.duty_u16(seno2)               # Establece el ciclo de trabajo del PWM del LED verde    
     
-    if pulsador.value() == 0:    #si es pulsado 
-        lectura = pot.read_u16()      #guarda la lectura
-        valores.append(lectura)      #la agrega a la lista a recorrer 
-        print(valores)        #imprimo la lista
+    print(seno,coseno,seno2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-# metodos de List
-# append --- agrega el dato al final
-# clear  --- borra todos los datos de la lista 
-# extend --- agrega una lista a la lista que se le aplica el metodo a la parte final
-# count --- cuenta el numero de veces que aparece un termino en una lista
-# index --- devuelve el valor del indice donde se encuentre el termino buscado
-# insert --- agrega un item a la lista en un indice especifico
-# pop  --- elimina el ultimo termino de la lista
-# remove --- elimina el primer termino que concuerde con el que indicamos
-# reverse --- le da vuelta a la lista actual 
-# sort  --- ordena la lista de menor a mayor
-        
-
-
-
-
-
-
+    rad = rad + 0.2
+    time.sleep(0.1)

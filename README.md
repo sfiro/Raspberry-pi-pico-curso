@@ -50,6 +50,8 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 11- [Manejo led RBG](Codigos/11-LedRGB.py)
 
+12- [Manejo led RBG, con libreria math](Codigos/12-LibreriaMath.py)
+
 ![Manejo led RBG](imagenes/11-LedRgb.png)
 
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
