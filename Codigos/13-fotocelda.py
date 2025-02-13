@@ -1,9 +1,9 @@
 from machine import Pin, ADC     #importacion de librerias
 import time
 
-rojo = Pin(0, Pin.OUT)       #definicion de salida digital GPIO0
-verde = Pin(1, Pin.OUT)     #definicion de salida digital GPIO1
-azul = Pin(2, Pin.OUT)     #definicion de salida digital GPIO2
+verde = Pin(0, Pin.OUT)       #definicion de salida digital GPIO0
+azul = Pin(1, Pin.OUT)     #definicion de salida digital GPIO1
+rojo = Pin(2, Pin.OUT)     #definicion de salida digital GPIO2
 
 foto = ADC(Pin(26))  #definicion de lectura fotocelda
 
