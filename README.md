@@ -54,7 +54,7 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![Manejo led RBG](imagenes/11-LedRgb.png)
 
-13- [Manejo de Sensor de Fotocelda](Codigos/13-fotocelda.py)
+13- [Manejo de Sensor de Fotocelda](Codigos/13-Sensor fotocelda.py)
 
 ![Manejo de fotocelda](imagenes/13-Sensor fotocelda.png)
 
