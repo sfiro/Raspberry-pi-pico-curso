@@ -56,11 +56,16 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 13- [Manejo de Sensor de Fotocelda](Codigos/13-fotocelda.py)
 
+![Manejo de fotocelda](imagenes/13-Sensor fotocelda.png)
+
 14- [Manejo de sensor de ritmo cardiaco](Codigos/14-sensorRitmoCardiaco.py)
+
+![Manejo de ritmo](imagenes/14-RitmoCardiaco.png)
 
 15- [Manejo de sensor de microfono](Codigos/15-sensorMicrofono.py)
 
-![Manejo analogicos](imagenes/13-sensoresAnalogicos.png)
+![Manejo de microfono](imagenes/15-sensorAudio.png)
+
 
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
