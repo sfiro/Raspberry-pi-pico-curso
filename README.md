@@ -66,6 +66,10 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![Manejo de microfono](imagenes/15-sensorAudio.png)
 
+16- [Manejo de DFPlayerMini](Codigos/19-dfplayermini/picodfplayer_gato.py)
+
+![Manejo de dfplayer](imagenes/16-dfplayerMini.png)
+
 
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
