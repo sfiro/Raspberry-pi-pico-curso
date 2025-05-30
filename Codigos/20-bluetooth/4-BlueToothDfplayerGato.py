@@ -41,20 +41,27 @@ def play_track(track_number):
                 break
         led.value(0)  # Establece el valor del pin en bajo (0)
 
-
+sonidoGato = 1
+cancion = 7
 while True:
 
-    # Verifica si han pasado 120 segundos desde la última reproducción automática
-    if ticks_diff(ticks_ms(), last_play_time_ronronear) >= 120000:
+    # Verifica si han pasado 1800 segundos - 30 minutos desde la última reproducción automática
+    if ticks_diff(ticks_ms(), last_play_time_ronronear) >= 1800000:
         print("Reproducción automática de la pista ronroneo")
-        play_track(5)  # Reproduce automáticamente la pista 1
+        play_track(cancion)  # Reproduce automáticamente la pista 1
         last_play_time_ronronear = ticks_ms()  # Actualiza la marca de tiempo
+        cancion = cancion + 1
+        if cancion == 11:
+            cancion = 7
 
 # Verifica si han pasado 60 segundos desde la última reproducción automática
     if ticks_diff(ticks_ms(), last_play_time_maullar) >= 60000:
         print("Reproducción automática de la pista maullar")
-        play_track(2)  # Reproduce automáticamente la pista 1
+        play_track(sonidoGato)  # Reproduce automáticamente la pista 1
         last_play_time_maullar = ticks_ms()  # Actualiza la marca de tiempo
+        sonidoGato = sonidoGato + 1
+        if sonidoGato == 7:
+            sonidoGato = 1
 
     # Verifica si el reproductor está ocupado
     if uart.any():

@@ -70,6 +70,11 @@ La Raspberry pi pico es una tarjeta pequeña, barata, muy rápida y que nos perm
 
 ![Manejo de dfplayer](imagenes/16-dfplayerMini.png)
 
+17- [Manejo de Bluetooth](Codigos/20-bluetooth/1-blue.py)
+
+![Manejo de Bluetooth](imagenes/21raspberryBluetooth.png)
+
+
 
 * [Mi pagina WEB] (https://tutosingenieria1.blogspot.com/)
 * [Mi canal de youtube] (https://www.youtube.com/c/TutosIngenieria)
